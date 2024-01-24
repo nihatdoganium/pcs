@@ -1,0 +1,31 @@
+{
+    "data": [
+      {
+        "id": 1,
+        "no": 5434,
+        "answerer": "Elif Nur",
+        "subject": "Nippoda sigorta kesemiyorum?",
+        "answerer_email": "gfeyer0@nyu.edu",
+        "status": 2
+      },
+      {
+        "id": 2,
+        "no": 6745,
+        "answerer": "Ceyda Kaya",
+        "subject": "Trafik Sigortası",
+        "answerer_email": "ckaya@gmail.com",
+        "status": 2
+        },
+        {
+        "id": 3,
+        "no": 5434,
+        "answerer": "Elif Nur",
+        "subject": "Nippoda sigorta kesemiyorum?",
+        "answerer_email": "gfeyer0@nywq.com",
+        "status": 1
+
+        
+      }
+      
+    ]
+  }

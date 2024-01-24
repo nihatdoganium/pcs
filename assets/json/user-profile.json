@@ -1,0 +1,94 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/engin can.png-4.png",
+      "project_leader": "Engin Can Yıldırım",
+      "project_name": "Engin Sigortacılık",
+      "talep_gonderen_kullanici_sayisi": "55",
+      "date": "09 Feb 2021",
+      "talep_sayisi": "89"
+    },
+    {
+      "id": 2,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/arzu köksaldı.png-4.png",
+      "project_leader": "Arzu Köksaldı",
+      "project_name": "Köksaldı Sigorta",
+      "talep_gonderen_kullanici_sayisi": "23",
+      "date": "20 Mar 2021",
+      "talep_sayisi": "72"
+    },
+    {
+      "id": 3,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/WhatsApp Görsel 2023-04-14 saat 14.19.19.jpg-3.jpg",
+      "project_leader": "EMEL BEDİR",
+      "project_name": "DÜNYA SİGORTA BROKERLİK",
+      "talep_gonderen_kullanici_sayisi": "55",
+      "date": "03 Jan 2021",
+      "talep_sayisi": "45"
+    },
+    {
+      "id": 4,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/Ekran görüntüsü 2023-05-27 16052",
+      "project_leader": "Hamza Savruk",
+      "project_name": "HMZ Sigorta",
+      "talep_gonderen_kullanici_sayisi": "678",
+      "date": "12 Aug 2021",
+      "talep_sayisi": "92"
+    },
+    {
+      "id": 5,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/resim_2023-03-24_113521399.png-6.png",
+      "project_leader": "Erhan Oflaz",
+      "project_name": "Yak Sigorta",
+      "talep_gonderen_kullanici_sayisi":"3",
+      "date": "08 Apr 2021",
+      "talep_sayisi": "25"
+    },
+    {
+      "id": 6,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/Ekran görüntüsü 2023-05-29 145559.png",
+      "project_leader": "Damla Ateşalp",
+      "project_name": "Ateş Sigorta",
+      "talep_gonderen_kullanici_sayisi": "22",
+      "date": "06 Oct 2021",
+      "talep_sayisi": "100"
+    },
+    {
+      "id": 7,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/5d89c987-4e0d-46db-b9ef-86cc5184f519.jpeg-1.jpeg",
+      "project_leader": "Ahmet Koç",
+      "project_name": "Osmanlı Sigorta",
+      "talep_gonderen_kullanici_sayisi": "12",
+      "date": "10 May 2021",
+      "talep_sayisi": "38"
+    },
+    {
+      "id": 8,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/logo (1).png-4.png",
+      "project_leader": "Berk Tuğ",
+      "project_name": "Özçete Sigorta",
+      "talep_gonderen_kullanici_sayisi": "56",
+      "date": "17 June 2021",
+      "talep_sayisi": "77"
+    },
+    {
+      "id": 9,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/1a706901-0d17-4b4b-b940-83ff08296bf0.jpg-7.jpg",
+      "project_leader": "Tokat Seçil Sigorta",
+      "project_name": "Ali Seçgin",
+      "talep_gonderen_kullanici_sayisi": "87",
+      "date": "29 Sept 2021",
+      "talep_sayisi": "36"
+    },
+    {
+      "id": 10,
+      "project_img": "https://web.doganium.online/assets/media/logos/companies/1a706901-0d17-4b4b-b940-83ff08296bf0.jpg-7.jpg",
+      "project_leader": "Özlem Deniz",
+      "project_name": "Özlem Deniz Sigorta",
+      "talep_gonderen_kullanici_sayisi": "11",
+      "date": "19 Apr 2021",
+      "talep_sayisi": "56"
+    }
+  ]
+}

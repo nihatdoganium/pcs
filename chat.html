@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="assets/"
+  data-template="vertical-menu-template">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Söhbetler </title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.css" />
+
+    <!-- Page CSS -->
+
+    <link rel="stylesheet" href="assets/vendor/css/pages/app-chat.css" />
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="dashboard.html" class="app-brand-link">
+              <span class="app-brand-logo demo" style="height: inherit;">
+               <img src="assets\img\doganium\cropped-doganium-favicon-192x192.png" alt="" style="width: inherit;">
+              </span>
+              <span class="app-brand-text demo menu-text fw-bold">Doğanium</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+              <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboards -->
+            <li class="menu-item active ">
+              <a href="[0] - dashboard-merkez-acante.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Yönetim Paneli">Yönetim Paneli</div>
+              </a>
+            </li>
+
+
+            <li class="menu-item ">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-device-desktop"></i>
+                <div data-i18n="Destek Personelleri">Destek Personelleri</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="personal-list.html" class="menu-link">
+                    <div data-i18n="Personel Listesi">Personel Listesi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="personal-add.html" class="menu-link">
+                    <div data-i18n="Personel Ekle">Personel Ekle</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-user"></i>
+                <div data-i18n="Kullanıcılar">Kullanıcılar</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="user-list.html" class="menu-link">
+                    <div data-i18n="Kullanıcı Listesi">Kullanıcı Listesi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="user-add.html" class="menu-link">
+                    <div data-i18n="Kullanıcı Ekle">Kullanıcı Ekle</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-ticket"></i>
+                <div data-i18n="Destek Talepleri">Destek Talepleri</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="ticket-list.html" class="menu-link">
+                    <div data-i18n="Destek Talebi Listesi">Destek Talebi Listesi</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="ticket-add.html" class="menu-link">
+                    <div data-i18n="Destek Talebi Ekle">Destek Talebi Ekle</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-clipboard"></i>
+                <div data-i18n="Rapor ve Analizler">Rapor ve Analizler</div>
+              </a>
+
+              <ul class="menu-sub">
+
+                <li class="menu-item">
+                  <a href="personal-point.html" class="menu-link">
+                    <div data-i18n="Personel Puanı">Personel Puanı</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="unanswered-tickets.html" class="menu-link">
+                    <div data-i18n="Cevapsız Talepler">Cevapsız Talepler</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="answered-tickets.html" class="menu-link">
+                    <div data-i18n="Çözülmüş Talepler">Çözülmüş Talepler</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-key"></i>
+                <div data-i18n="Yönetici İşlemleri">Yönetici İşlemleri</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="oncelik-listesi.html" class="menu-link">
+                    <div data-i18n="Öncelik Listesi">Öncelik Listesi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="departman-listesi.html" class="menu-link">
+                    <div data-i18n="Departman Listesi">Departman Listesi</div>
+                  </a>
+                </li>
+
+              </ul>
+            </li>
+
+            <li class="menu-item active">
+              <a href="chat.html" class="menu-link ">
+                <i class="menu-icon tf-icons ti ti-square-rounded-letter-s"></i>
+                <div data-i18n="Söhbetler">Söhbetler</div>
+              </a>
+            </li>
+
+            <li class="menu-item">
+              <a href="settings.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-settings"></i>
+                <div data-i18n="Ayarlar">Ayarlar</div>
+              </a>
+            </li>
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+          class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+          id="layout-navbar">
+          <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+            <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+              <i class="ti ti-menu-2 ti-sm"></i>
+            </a>
+          </div>
+
+          <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+            <!-- Search -->
+            <div class="navbar-nav align-items-center">
+              <div class="nav-item navbar-search-wrapper mb-0">
+                <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                  <i class="ti ti-search ti-md me-2"></i>
+                  <span class="d-none d-md-inline-block text-muted">Ara (Ctrl+/)</span>
+                </a>
+              </div>
+            </div>
+            <!-- /Search -->
+
+            <ul class="navbar-nav flex-row align-items-center ms-auto">
+              <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <i class="ti ti-md"></i>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
+                      <span class="align-middle"><i class="ti ti-sun me-2"></i>Beyaz</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);" data-theme="dark">
+                      <span class="align-middle"><i class="ti ti-moon me-2"></i>Siyah</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
+                      <span class="align-middle"><i class="ti ti-device-desktop me-2"></i>Sistem Varsayılanı</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!-- / Style Switcher-->
+              <!-- Notification -->
+              <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                <a
+                  class="nav-link dropdown-toggle hide-arrow"
+                  href="javascript:void(0);"
+                  data-bs-toggle="dropdown"
+                  data-bs-auto-close="outside"
+                  aria-expanded="false">
+                  <i class="ti ti-bell ti-md"></i>
+                  <span class="badge bg-danger rounded-pill badge-notifications">1</span>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end py-0">
+                  <li class="dropdown-menu-header border-bottom">
+                    <div class="dropdown-header d-flex align-items-center py-3">
+                      <h5 class="text-body mb-0 me-auto">Yeni Talepler</h5>
+                      <a
+                        href="javascript:void(0)"
+                        class="dropdown-notifications-all text-body"
+                        data-bs-toggle="tooltip"
+                        data-bs-placement="top"
+                        title="Hepsini Okundu Olarak İşaretle"
+                        ><i class="ti ti-mail-opened fs-4"></i
+                      ></a>
+                    </div>
+                  </li>
+                  <li class="dropdown-notifications-list scrollable-container">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar">
+                              <img src="assets/img/avatars/6.png" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <h6 class="mb-1">Quıck sigorta sisteminde resim doğrulama ekranını geçemiyoruz.</h6>
+                            <p class="mb-0">Merhaba, Quıck sigorta sisteminde bu resim doğrulama ekranını imkansız geçemiyoruz. Google chromeden girecek olsak geçmişi sildiğimizde sorun yaşanmadan bir denedeme direk girebiliyoruz.</p>
+                            <small class="text-muted">1h ago</small>
+                          </div>
+                          <div class="flex-shrink-0 dropdown-notifications-actions">
+                            <a href="javascript:void(0)" class="dropdown-notifications-read"
+                              ><span class="badge badge-dot"></span
+                            ></a>
+                            <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                              ><span class="ti ti-x"></span
+                            ></a>
+                          </div>
+                        </div>
+                      </li>
+                    
+                    </ul>
+                  </li>
+                  <li class="dropdown-menu-footer border-top">
+                    <a
+                      href="ticket-list.html"
+                      class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center">
+                      Tüm Talepleri Görüntüle
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ Notification -->
+
+              <!-- User -->
+              <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                  <div class="avatar avatar-online">
+                    <img src="https://web.doganium.online/assets/media/logos/companies/LOGO%202%20.png-5.png" alt class="h-auto rounded-circle" />
+                  </div>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <a class="dropdown-item" href="yonetici-profile.html">
+                      <div class="d-flex">
+                        <div class="flex-shrink-0 me-3">
+                          <div class="avatar avatar-online">
+                            <img src="https://web.doganium.online/assets/media/logos/companies/LOGO%202%20.png-5.png" alt class="h-auto rounded-circle" />
+                          </div>
+                        </div>
+                        <div class="flex-grow-1">
+                          <span class="fw-medium d-block">Ömür BoranAlp</span>
+                          <small class="text-muted">Yönetici</small>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="yonetici-profile.html">
+                      <i class="ti ti-user-check me-2 ti-sm"></i>
+                      <span class="align-middle">Profilim</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="yonetici-profile.html">
+                      <i class="ti ti-settings me-2 ti-sm"></i>
+                      <span class="align-middle">Profil Ayarları</span>
+                    </a>
+                  </li>
+            
+                
+                
+                  <li>
+                    <div class="dropdown-divider"></div>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                      <i class="ti ti-logout me-2 ti-sm"></i>
+                      <span class="align-middle">Çıkış Yap</span>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <!--/ User -->
+            </ul>
+          </div>
+
+          <!-- Search Small Screens -->
+          <div class="navbar-search-wrapper search-input-wrapper d-none">
+            <input
+              type="text"
+              class="form-control search-input container-xxl border-0"
+              placeholder="Ara..."
+              aria-label="Ara..." />
+            <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+          </div>
+        </nav>
+
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="app-chat card overflow-hidden">
+                <div class="row g-0">
+                  <!-- Sidebar Left -->
+                  <div class="col app-chat-sidebar-left app-sidebar overflow-hidden" id="app-chat-sidebar-left">
+                    <div
+                      class="chat-sidebar-left-user sidebar-header d-flex flex-column justify-content-center align-items-center flex-wrap px-4 pt-5">
+                      <div class="avatar avatar-xl avatar-online">
+                        <img src="https://web.doganium.online/assets/media/logos/companies/LOGO%202%20.png-5.png" alt="Avatar" class="rounded-circle" />
+                      </div>
+                      <h5 class="mt-2 mb-0">Ömür BoranAlp</h5>
+                      <span>Yönetici</span>
+                      <i
+                        class="ti ti-x ti-sm cursor-pointer close-sidebar"
+                        data-bs-toggle="sidebar"
+                        data-overlay
+                        data-target="#app-chat-sidebar-left"></i>
+                    </div>
+                    <div class="sidebar-body px-4 pb-4">
+                     
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">Status</small>
+                        <div class="d-grid gap-2 mt-3">
+                          <div class="form-check form-check-danger">
+                            <input
+                              name="chat-user-status"
+                              class="form-check-input"
+                              type="radio"
+                              value="busy"
+                              id="user-busy" />
+                            <label class="form-check-label" for="user-busy">Müsait</label>
+                          </div>
+                          <div class="form-check form-check-warning">
+                            <input
+                              name="chat-user-status"
+                              class="form-check-input"
+                              type="radio"
+                              value="away"
+                              id="user-away" />
+                            <label class="form-check-label" for="user-away">Meşgul</label>
+                          </div>
+                          <div class="form-check form-check-secondary">
+                            <input
+                              name="chat-user-status"
+                              class="form-check-input"
+                              type="radio"
+                              value="offline"
+                              id="user-offline" />
+                            <label class="form-check-label" for="user-offline">Çevrimdışı</label>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">Settings</small>
+                        <ul class="list-unstyled d-grid gap-2 me-3 mt-3">
+                        
+                          <li class="d-flex justify-content-between align-items-center">
+                            <div>
+                              <i class="ti ti-bell me-1 ti-sm"></i>
+                              <span class="align-middle">Bildirimleri Aç</span>
+                            </div>
+                            <label class="switch switch-primary me-4 switch-sm">
+                              <input type="checkbox" class="switch-input" />
+                              <span class="switch-toggle-slider">
+                                <span class="switch-on"></span>
+                                <span class="switch-off"></span>
+                              </span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="d-flex mt-4">
+                        <button
+                          class="btn btn-primary"
+                          data-bs-toggle="sidebar"
+                          data-overlay
+                          data-target="#app-chat-sidebar-left">
+                          Çıkış Yap
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Sidebar Left-->
+
+                  <!-- Chat & Contacts -->
+                  <div
+                    class="col app-chat-contacts app-sidebar flex-grow-0 overflow-hidden border-end"
+                    id="app-chat-contacts">
+                    <div class="sidebar-header">
+                      <div class="d-flex align-items-center me-3 me-lg-0">
+                        <div
+                          class="flex-shrink-0 avatar avatar-online me-3"
+                          data-bs-toggle="sidebar"
+                          data-overlay="app-overlay-ex"
+                          data-target="#app-chat-sidebar-left">
+                          <img
+                            class="user-avatar rounded-circle cursor-pointer"
+                            src="https://web.doganium.online/assets/media/logos/companies/LOGO%202%20.png-5.png"
+                            alt="Avatar" />
+                        </div>
+                        <div class="flex-grow-1 input-group input-group-merge rounded-pill">
+                          <span class="input-group-text" id="basic-addon-search31"><i class="ti ti-search"></i></span>
+                          <input
+                            type="text"
+                            class="form-control chat-search-input"
+                            placeholder="Search..."
+                            aria-label="Search..."
+                            aria-describedby="basic-addon-search31" />
+                        </div>
+                      </div>
+                      <i
+                        class="ti ti-x cursor-pointer d-lg-none d-block position-absolute mt-2 me-1 top-0 end-0"
+                        data-overlay
+                        data-bs-toggle="sidebar"
+                        data-target="#app-chat-contacts"></i>
+                    </div>
+                    <hr class="container-m-nx m-0" />
+                    <div class="sidebar-body">
+                      <div class="chat-contact-list-item-title">
+                        <h5 class="text-primary mb-0 px-4 pt-3 pb-2">Söhbetler</h5>
+                      </div>
+                      <!-- Chats -->
+                      <ul class="list-unstyled chat-contact-list" id="sohbet-listesi">
+                        <li class="chat-contact-list-item sohbet-liste-ogesi-0 d-none">
+                            <h6 class="text-muted mb-0">Hiç Sohbet Bulunamadı</h6>
+                        </li>
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-çevrimiçi">
+                                    <img src="assets/img/avatars/13.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Ahmet Yusuf</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">
+                                        Arkadaşlara söyledi 
+                                    </p>
+                                </div>
+                                <small class="text-muted mb-auto">5 Dakika</small>
+                            </a>
+                        </li>
+                        <li class="chat-contact-list-item active">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-çevrimdışı">
+                                    <img src="assets/img/avatars/2.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Hülya Yaşar</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">
+                                        Kesinlikle satın alacağım. 👍
+                                    </p>
+                                </div>
+                                <small class="text-muted mb-auto">30 Dakika</small>
+                            </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-mesgul">
+                                    <span class="avatar-initial rounded-circle bg-label-success">YK</span>
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Yusuf Kaya</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">
+                                        Eğer uzun sürerse, iç kutusuna e-posta atabilirsin.
+                                    </p>
+                                </div>
+                                <small class="text-muted mb-auto">1 Gün</small>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                      <!-- Contacts -->
+                      <ul class="list-unstyled chat-contact-list mb-0" id="contact-list">
+                        <li class="chat-contact-list-item chat-contact-list-item-title">
+                            <h5 class="text-primary mb-0">Kişiler</h5>
+                        </li>
+                        <li class="chat-contact-list-item contact-list-item-0 d-none">
+                            <h6 class="text-muted mb-0">Kişi Bulunamadı</h6>
+                        </li>
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-offline">
+                                    <img src="assets/img/avatars/4.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Nalan Mert</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">Trafik</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-busy">
+                                    <img src="assets/img/avatars/5.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Mert Gültekin</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">Tss</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="avatar d-block flex-shrink-0">
+                                    <span class="avatar-initial rounded-circle bg-label-primary">LM</span>
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Levent Mert</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">Kaynak Yöneticisi</p>
+                                </div>
+                            </a>
+                        </li>
+                      
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-offline">
+                                    <img src="assets/img/avatars/8.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Seda Güvenç</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">Pazarlama</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-busy">
+                                    <img src="assets/img/avatars/10.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Merve Gültekin</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">Hesap Departmanı</p>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="chat-contact-list-item">
+                            <a class="d-flex align-items-center">
+                                <div class="flex-shrink-0 avatar avatar-offline">
+                                    <img src="assets/img/avatars/2.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                                <div class="chat-contact-info flex-grow-1 ms-2">
+                                    <h6 class="chat-contact-name text-truncate m-0">Hülya Yaşar</h6>
+                                    <p class="chat-contact-status text-muted text-truncate mb-0">Bulut Mühendisi</p>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    </div>
+                  </div>
+                  <!-- /Chat contacts -->
+
+                  <!-- Chat History -->
+                  <div class="col app-chat-history bg-body">
+                    <div class="chat-history-wrapper">
+                      <div class="chat-history-header border-bottom">
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="d-flex overflow-hidden align-items-center">
+                            <i
+                              class="ti ti-menu-2 ti-sm cursor-pointer d-lg-none d-block me-2"
+                              data-bs-toggle="sidebar"
+                              data-overlay
+                              data-target="#app-chat-contacts"></i>
+                            <div class="flex-shrink-0 avatar">
+                              <img
+                                src="assets/img/avatars/2.png"
+                                alt="Avatar"
+                                class="rounded-circle"
+                                data-bs-toggle="sidebar"
+                                data-overlay
+                                data-target="#app-chat-sidebar-right" />
+                            </div>
+                            <div class="chat-contact-info flex-grow-1 ms-2">
+                              <h6 class="m-0">Hülya Yaşar</h6>
+                              <small class="user-status text-muted"> Kuzey Şube </small>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center">
+                            <i class="ti ti-phone-call cursor-pointer d-sm-block d-none me-3"></i>
+                            <i class="ti ti-video cursor-pointer d-sm-block d-none me-3"></i>
+                            <i class="ti ti-search cursor-pointer d-sm-block d-none me-3"></i>
+                            <div class="dropdown d-flex align-self-center">
+                              <button
+                                class="btn p-0"
+                                type="button"
+                                id="chat-header-actions"
+                                data-bs-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false">
+                                <i class="ti ti-dots-vertical"></i>
+                              </button>
+                              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="chat-header-actions">
+                                <a class="dropdown-item" href="http://127.0.0.1:5500/user-detail.html">Profili Görüntüle</a>
+                                <a class="dropdown-item" href="javascript:void(0);">
+                                  Söhbeti Temizle</a>
+                                  <a class="dropdown-item text-danger" href="javascript:void(0);">Engelle</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="chat-history-body bg-body">
+                        <ul class="list-unstyled chat-history">
+                            
+                          <li class="chat-message">
+                            <div class="d-flex overflow-hidden">
+                              <div class="user-avatar flex-shrink-0 me-3">
+                                <div class="avatar avatar-sm">
+                                  <img src="assets/img/avatars/2.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                              </div>
+                              <div class="chat-message-wrapper flex-grow-1">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">Nasıl Gidiyor?</p>
+                                </div>
+                                <div class="text-muted mt-1">
+                                  <small>10:15</small>
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                          <li class="chat-message chat-message-right">
+                            <div class="d-flex overflow-hidden">
+                              <div class="chat-message-wrapper flex-grow-1 w-50">
+                                <div class="chat-message-text">
+                                  <p class="mb-0">
+                                    İyi, teşekkürler. Siz nasılsınız?
+                                  </p>
+                                </div>
+                                <div class="text-end text-muted mt-1">
+                                  <i class="ti ti-checks ti-xs me-1"></i>
+                                  <small>10:15</small>
+                                </div>
+                              </div>
+                              <div class="user-avatar flex-shrink-0 ms-3">
+                                <div class="avatar avatar-sm">
+                                  <img src="https://web.doganium.online/assets/media/logos/companies/LOGO%202%20.png-5.png" alt="Avatar" class="rounded-circle" />
+                                </div>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                      <!-- Chat message form -->
+                      <div class="chat-history-footer shadow-sm">
+                        <form class="form-send-message d-flex justify-content-between align-items-center">
+                          <input
+                            class="form-control message-input border-0 me-3 shadow-none"
+                            placeholder="Mesajınızı Buraya Yazın" />
+                          <div class="message-actions d-flex align-items-center">
+                            <i class="speech-to-text ti ti-microphone ti-sm cursor-pointer"></i>
+                            <label for="attach-doc" class="form-label mb-0">
+                              <i class="ti ti-photo ti-sm cursor-pointer mx-3"></i>
+                              <input type="file" id="attach-doc" hidden />
+                            </label>
+                            <button class="btn btn-primary d-flex send-msg-btn">
+                              <i class="ti ti-send me-md-1 me-0"></i>
+                              <span class="align-middle d-md-inline-block d-none">Gönder</span>
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Chat History -->
+
+                  <!-- Sidebar Right -->
+                  <div class="col app-chat-sidebar-right app-sidebar overflow-hidden" id="app-chat-sidebar-right">
+                    <div
+                      class="sidebar-header d-flex flex-column justify-content-center align-items-center flex-wrap px-4 pt-5">
+                      <div class="avatar avatar-xl avatar-online">
+                        <img src="assets/img/avatars/2.png" alt="Avatar" class="rounded-circle" />
+                      </div>
+                      <h6 class="mt-2 mb-0">Felecia Rower</h6>
+                      <span>NextJS Developer</span>
+                      <i
+                        class="ti ti-x ti-sm cursor-pointer close-sidebar d-block"
+                        data-bs-toggle="sidebar"
+                        data-overlay
+                        data-target="#app-chat-sidebar-right"></i>
+                    </div>
+                    <div class="sidebar-body px-4 pb-4">
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">About</small>
+                        <p class="mb-0 mt-3">
+                          A Next. js developer is a software developer who uses the Next. js framework alongside ReactJS
+                          to build web applications.
+                        </p>
+                      </div>
+                      <div class="my-4">
+                        <small class="text-muted text-uppercase">Personal Information</small>
+                        <ul class="list-unstyled d-grid gap-2 mt-3">
+                          <li class="d-flex align-items-center">
+                            <i class="ti ti-mail ti-sm"></i>
+                            <span class="align-middle ms-2">josephGreen@email.com</span>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="ti ti-phone-call ti-sm"></i>
+                            <span class="align-middle ms-2">+1(123) 456 - 7890</span>
+                          </li>
+                          <li class="d-flex align-items-center">
+                            <i class="ti ti-clock ti-sm"></i>
+                            <span class="align-middle ms-2">Mon - Fri 10AM - 8PM</span>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="mt-4">
+                        <small class="text-muted text-uppercase">Options</small>
+                        <ul class="list-unstyled d-grid gap-2 mt-3">
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-badge ti-sm"></i>
+                            <span class="align-middle ms-2">Add Tag</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-star ti-sm"></i>
+                            <span class="align-middle ms-2">Important Contact</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-photo ti-sm"></i>
+                            <span class="align-middle ms-2">Shared Media</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-trash ti-sm"></i>
+                            <span class="align-middle ms-2">Delete Contact</span>
+                          </li>
+                          <li class="cursor-pointer d-flex align-items-center">
+                            <i class="ti ti-ban ti-sm"></i>
+                            <span class="align-middle ms-2">Block Contact</span>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- /Sidebar Right -->
+
+                  <div class="app-overlay"></div>
+                </div>
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+                <div class="container-xxl">
+                  <div class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column">
+                    <div> © 2023 - <script>
+                        document.write(new Date().getFullYear());
+                      </script>
+                      <a href="https://doganium.com.tr" target="_blank" class="fw-medium">Doğanium Bilgi Teknolojileri</a>
+                    </div>
+                    <div class="d-none d-lg-inline-block">
+                      <a href="https://web.doganium.online" target="_blank" class="footer-link me-4">Sorgu Ekranına Git</a>
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/bootstrap-maxlength/bootstrap-maxlength.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/app-chat.js"></script>
+  </body>
+</html>

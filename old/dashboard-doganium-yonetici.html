@@ -1,0 +1,1317 @@
+
+<!DOCTYPE html>
+
+<html
+  lang="en"
+  class="light-style layout-navbar-fixed layout-menu-fixed layout-compact"
+  dir="ltr"
+  data-theme="theme-default"
+  data-assets-path="../../assets/"
+  data-template="vertical-menu-template">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+
+    <title>Dashboard - Analytics | Vuexy - Bootstrap Admin Template</title>
+
+    <meta name="description" content="" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon/favicon.ico" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&ampdisplay=swap"
+      rel="stylesheet" />
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="assets/vendor/fonts/fontawesome.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/tabler-icons.css" />
+    <link rel="stylesheet" href="assets/vendor/fonts/flag-icons.css" />
+
+    <!-- Core CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" class="template-customizer-core-css" />
+    <link rel="stylesheet" href="assets/vendor/css/rtl/theme-default.css" class="template-customizer-theme-css" />
+    <link rel="stylesheet" href="assets/css/demo.css" />
+
+    <!-- Vendors CSS -->
+    <link rel="stylesheet" href="assets/vendor/libs/node-waves/node-waves.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/typeahead-js/typeahead.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/apex-charts/apex-charts.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/swiper/swiper.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/datatables-bs5/datatables.bootstrap5.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/datatables-responsive-bs5/responsive.bootstrap5.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/datatables-checkboxes-jquery/datatables.checkboxes.css" />
+
+    <!-- Page CSS -->
+    <link rel="stylesheet" href="assets/vendor/css/pages/cards-advance.css" />
+
+    <!-- Helpers -->
+    <script src="assets/vendor/js/helpers.js"></script>
+    <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
+    <!--? Template customizer: To hide customizer set displayCustomizer value false in config.js.  -->
+    <script src="assets/vendor/js/template-customizer.js"></script>
+    <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
+    <script src="assets/js/config.js"></script>
+  </head>
+
+  <body>
+    <!-- Layout wrapper -->
+    <div class="layout-wrapper layout-content-navbar">
+      <div class="layout-container">
+        <!-- Menu -->
+
+        <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
+          <div class="app-brand demo">
+            <a href="dashboard.html" class="app-brand-link">
+              <span class="app-brand-logo demo" style="height: inherit;">
+               <img src="assets\img\doganium\cropped-doganium-favicon-192x192.png" alt="" style="width: inherit;">
+              </span>
+              <span class="app-brand-text demo menu-text fw-bold">Doğanium</span>
+            </a>
+
+            <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto">
+              <i class="ti menu-toggle-icon d-none d-xl-block ti-sm align-middle"></i>
+              <i class="ti ti-x d-block d-xl-none ti-sm align-middle"></i>
+            </a>
+          </div>
+
+          <div class="menu-inner-shadow"></div>
+
+          <ul class="menu-inner py-1">
+            <!-- Dashboards -->
+            <li class="menu-item active open">
+              <a href="javascript:void(0);" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-smart-home"></i>
+                <div data-i18n="Yönetim Paneli">Yönetim Paneli</div>
+              </a>
+            </li>
+
+            <li class="menu-item open">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-layout-sidebar"></i>
+                <div data-i18n="Destek Talepleri">Destek Talepleri</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Destek Talebi Listesi">Destek Talebi Listesi</div>
+                  </a>
+                </li>
+                <li class="menu-item">
+                  <a href="layouts-content-navbar.html" class="menu-link">
+                    <div data-i18n="Destek Talebi Ekle">Destek Talebi Ekle</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-user"></i>
+                <div data-i18n="Destek Personelleri">Destek Personelleri</div>
+              </a>
+
+              <ul class="menu-sub">
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Aktif Personeller">Aktif Personeller</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Personel Listesi">Personel Listesi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="İzinler">İzinler</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-clipboard"></i>
+                <div data-i18n="Rapor ve Analizler">Rapor ve Analizler</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-content-navbar.html" class="menu-link">
+                    <div data-i18n="Personel Puanı">Personel Puanı</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Şube Bazlı Raporlar">Şube Bazlı Raporlar</div>
+                  </a>
+                </li>
+
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Cevapsız Talepler">Cevapsız Talepler</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Çözülmüş Talepler">Çözülmüş Talepler</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-content-navbar.html" class="menu-link">
+                    <div data-i18n="Ortalama Destek Süresi">Ortalama Destek Süresi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-content-navbar.html" class="menu-link">
+                    <div data-i18n="Kullanıcı Memnuniyeti">Kullanıcı Memnuniyeti</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-pin"></i>
+                <div data-i18n="Acenteler">Acenteler</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Acente Listesi">Acente Listesi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="İzinler">Acente İzinleri</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-key"></i>
+                <div data-i18n="Yönetici İşlemleri">Yönetici İşlemleri</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Öncelik Listesi">Öncelik Listesi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Departman Listesi">Departman Listesi</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+            <li class="menu-item">
+              <a href="javascript:void(0);" class="menu-link menu-toggle">
+                <i class="menu-icon tf-icons ti ti-user"></i>
+                <div data-i18n="Roller">Roller</div>
+              </a>
+
+              <ul class="menu-sub">
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="Rol Listesi">Rol Listesi</div>
+                  </a>
+                </li>
+
+                <li class="menu-item">
+                  <a href="layouts-collapsed-menu.html" class="menu-link">
+                    <div data-i18n="İzinler">İzinler</div>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+
+
+
+
+            <li class="menu-item">
+              <a href="layouts-content-navbar.html" class="menu-link">
+                <i class="menu-icon tf-icons ti ti-settings"></i>
+                <div data-i18n="Ayarlar">Ayarlar</div>
+              </a>
+            </li>
+
+
+
+        
+            
+       
+          </ul>
+        </aside>
+        <!-- / Menu -->
+
+        <!-- Layout container -->
+        <div class="layout-page">
+          <!-- Navbar -->
+
+          <nav
+            class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme"
+            id="layout-navbar">
+            <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
+              <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                <i class="ti ti-menu-2 ti-sm"></i>
+              </a>
+            </div>
+
+            <div class="navbar-nav-right d-flex align-items-center" id="navbar-collapse">
+              <!-- Search -->
+              <div class="navbar-nav align-items-center">
+                <div class="nav-item navbar-search-wrapper mb-0">
+                  <a class="nav-item nav-link search-toggler d-flex align-items-center px-0" href="javascript:void(0);">
+                    <i class="ti ti-search ti-md me-2"></i>
+                    <span class="d-none d-md-inline-block text-muted">Search (Ctrl+/)</span>
+                  </a>
+                </div>
+              </div>
+              <!-- /Search -->
+
+              <ul class="navbar-nav flex-row align-items-center ms-auto">
+                <li class="nav-item dropdown-style-switcher dropdown me-2 me-xl-0">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <i class="ti ti-md"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end dropdown-styles">
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-theme="light">
+                        <span class="align-middle"><i class="ti ti-sun me-2"></i>Light</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-theme="dark">
+                        <span class="align-middle"><i class="ti ti-moon me-2"></i>Dark</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="javascript:void(0);" data-theme="system">
+                        <span class="align-middle"><i class="ti ti-device-desktop me-2"></i>System</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!-- / Style Switcher-->
+
+                <!-- Quick links  -->
+                <li class="nav-item dropdown-shortcuts navbar-dropdown dropdown me-2 me-xl-0">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                    <i class="ti ti-layout-grid-add ti-md"></i>
+                  </a>
+                  <div class="dropdown-menu dropdown-menu-end py-0">
+                    <div class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h5 class="text-body mb-0 me-auto">Kısayollar</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-shortcuts-add text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Add shortcuts"
+                          ><i class="ti ti-sm ti-apps"></i
+                        ></a>
+                      </div>
+                    </div>
+                    <div class="dropdown-shortcuts-list scrollable-container">
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-calendar fs-4"></i>
+                          </span>
+                          <a href="app-calendar.html" class="stretched-link">Calendar</a>
+                          <small class="text-muted mb-0">Appointments</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-file-invoice fs-4"></i>
+                          </span>
+                          <a href="app-invoice-list.html" class="stretched-link">Invoice App</a>
+                          <small class="text-muted mb-0">Manage Accounts</small>
+                        </div>
+                      </div>
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-users fs-4"></i>
+                          </span>
+                          <a href="app-user-list.html" class="stretched-link">User App</a>
+                          <small class="text-muted mb-0">Manage Users</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-lock fs-4"></i>
+                          </span>
+                          <a href="app-access-roles.html" class="stretched-link">Role Management</a>
+                          <small class="text-muted mb-0">Permission</small>
+                        </div>
+                      </div>
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-chart-bar fs-4"></i>
+                          </span>
+                          <a href="index.html" class="stretched-link">Dashboard</a>
+                          <small class="text-muted mb-0">User Profile</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-settings fs-4"></i>
+                          </span>
+                          <a href="pages-account-settings-account.html" class="stretched-link">Setting</a>
+                          <small class="text-muted mb-0">Account Settings</small>
+                        </div>
+                      </div>
+                      <div class="row row-bordered overflow-visible g-0">
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-help fs-4"></i>
+                          </span>
+                          <a href="pages-faq.html" class="stretched-link">FAQs</a>
+                          <small class="text-muted mb-0">FAQs & Articles</small>
+                        </div>
+                        <div class="dropdown-shortcuts-item col">
+                          <span class="dropdown-shortcuts-icon rounded-circle mb-2">
+                            <i class="ti ti-square fs-4"></i>
+                          </span>
+                          <a href="modal-examples.html" class="stretched-link">Modals</a>
+                          <small class="text-muted mb-0">Useful Popups</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <!-- Quick links -->
+
+                <!-- Notification -->
+                <li class="nav-item dropdown-notifications navbar-dropdown dropdown me-3 me-xl-1">
+                  <a
+                    class="nav-link dropdown-toggle hide-arrow"
+                    href="javascript:void(0);"
+                    data-bs-toggle="dropdown"
+                    data-bs-auto-close="outside"
+                    aria-expanded="false">
+                    <i class="ti ti-bell ti-md"></i>
+                    <span class="badge bg-danger rounded-pill badge-notifications">5</span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end py-0">
+                    <li class="dropdown-menu-header border-bottom">
+                      <div class="dropdown-header d-flex align-items-center py-3">
+                        <h5 class="text-body mb-0 me-auto">Bildirimler</h5>
+                        <a
+                          href="javascript:void(0)"
+                          class="dropdown-notifications-all text-body"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="top"
+                          title="Mark all as read"
+                          ><i class="ti ti-mail-opened fs-4"></i
+                        ></a>
+                      </div>
+                    </li>
+                    <li class="dropdown-notifications-list scrollable-container">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img src="assets/img/avatars/1.png" alt class="h-auto rounded-circle" />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">Congratulation Lettie 🎉</h6>
+                              <p class="mb-0">Won the monthly best seller gold badge</p>
+                              <small class="text-muted">1h ago</small>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <img src="assets/img/avatars/2.png" alt class="h-auto rounded-circle" />
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">New Message ✉️</h6>
+                              <p class="mb-0">You have new message from Natalie</p>
+                              <small class="text-muted">1h ago</small>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+
+
+                        <li class="list-group-item list-group-item-action dropdown-notifications-item marked-as-read">
+                          <div class="d-flex">
+                            <div class="flex-shrink-0 me-3">
+                              <div class="avatar">
+                                <span class="avatar-initial rounded-circle bg-label-warning"
+                                  ><i class="ti ti-alert-triangle"></i
+                                ></span>
+                              </div>
+                            </div>
+                            <div class="flex-grow-1">
+                              <h6 class="mb-1">CPU is running high</h6>
+                              <p class="mb-0">CPU Utilization Percent is currently at 88.63%,</p>
+                              <small class="text-muted">5 days ago</small>
+                            </div>
+                            <div class="flex-shrink-0 dropdown-notifications-actions">
+                              <a href="javascript:void(0)" class="dropdown-notifications-read"
+                                ><span class="badge badge-dot"></span
+                              ></a>
+                              <a href="javascript:void(0)" class="dropdown-notifications-archive"
+                                ><span class="ti ti-x"></span
+                              ></a>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="dropdown-menu-footer border-top">
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item d-flex justify-content-center text-primary p-2 h-px-40 mb-1 align-items-center">
+                        Tüm Bildirimleri Görüntüle
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ Notification -->
+
+                <!-- User -->
+                <li class="nav-item navbar-dropdown dropdown-user dropdown">
+                  <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
+                    <div class="avatar avatar-online">
+                      <img src="https://img-c.udemycdn.com/user/200_H/28563446_d8c3.jpg" alt class="h-auto rounded-circle" />
+                    </div>
+                  </a>
+                  <ul class="dropdown-menu dropdown-menu-end">
+                    <li>
+                      <a class="dropdown-item" href="yonetici-profile.html">
+                        <div class="d-flex">
+                          <div class="flex-shrink-0 me-3">
+                            <div class="avatar avatar-online">
+                              <img src="https://img-c.udemycdn.com/user/200_H/28563446_d8c3.jpg" alt class="h-auto rounded-circle" />
+                            </div>
+                          </div>
+                          <div class="flex-grow-1">
+                            <span class="fw-medium d-block">Doğan Keskin</span>
+                            <small class="text-muted">Yönetici</small>
+                          </div>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="yonetici-profile.html">
+                        <i class="ti ti-user-check me-2 ti-sm"></i>
+                        <span class="align-middle">Profilim</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="yonetici-profile.html">
+                        <i class="ti ti-settings me-2 ti-sm"></i>
+                        <span class="align-middle">Profil Ayarları</span>
+                      </a>
+                    </li>
+              
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="pages-faq.html">
+                        <i class="ti ti-help me-2 ti-sm"></i>
+                        <span class="align-middle">Başarı Puanım</span>
+                      </a>
+                    </li>
+                  
+                    <li>
+                      <div class="dropdown-divider"></div>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="auth-login-cover.html" target="_blank">
+                        <i class="ti ti-logout me-2 ti-sm"></i>
+                        <span class="align-middle">Çıkış Yap</span>
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <!--/ User -->
+              </ul>
+            </div>
+
+            <!-- Search Small Screens -->
+            <div class="navbar-search-wrapper search-input-wrapper d-none">
+              <input
+                type="text"
+                class="form-control search-input container-xxl border-0"
+                placeholder="Search..."
+                aria-label="Search..." />
+              <i class="ti ti-x ti-sm search-toggler cursor-pointer"></i>
+            </div>
+          </nav>
+
+          <!-- / Navbar -->
+
+          <!-- Content wrapper -->
+          <div class="content-wrapper">
+            <!-- Content -->
+
+            <div class="container-xxl flex-grow-1 container-p-y">
+              <div class="row">
+                <!-- Website Analytics -->
+                <div class="col-lg-6 mb-4">
+                  <div
+                    class="swiper-container swiper-container-horizontal swiper swiper-card-advance-bg"
+                    id="swiper-with-pagination-cards">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="row">
+                          <div class="col-12">
+                            <h5 class="text-white mb-0 mt-2">Destek Personeli Raporu</h5>
+                            <small>Günlük Çalışma İstatistikleri</small>
+                          </div>
+                          <div class="row">
+                            <div class="col-lg-7 col-md-9 col-12 order-2 order-md-1">
+                              <h6 class="text-white mt-0 mt-md-3 mb-3">Destek Talepleri</h6>
+                              <div class="row">
+                                <div class="col-6">
+                                  <ul class="list-unstyled mb-0">
+                                    <li class="d-flex align-items-center mb-4">
+                                      <p class="mb-0 fw-medium me-2 website-analytics-text-bg">15</p>
+                                      <p class="mb-0">Yeni Talep</p>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                      <p class="mb-0 fw-medium me-2 website-analytics-text-bg">90%</p>
+                                      <p class="mb-0">M. Memnuniyeti</p>
+                                    </li>
+                                  </ul>
+                                </div>
+                                <div class="col-6">
+                                  <ul class="list-unstyled mb-0">
+                                    <li class="d-flex align-items-center mb-4">
+                                      <p class="mb-0 fw-medium me-2 website-analytics-text-bg">80%</p>
+                                      <p class="mb-0">Tamamlanan Talepler</p>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                      <p class="mb-0 fw-medium me-2 website-analytics-text-bg small">23 dk</p>
+                                      <p class="mb-0">Ortalama Yanıt Süresi</p>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-lg-5 col-md-3 col-12 order-1 order-md-2 my-4 my-md-0 text-center">
+                            <img
+                                src="assets/img/illustrations/card-website-analytics-1.png"
+                                alt="Website Analytics"
+                                width="170"
+                                class="card-website-analytics-img" />
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div class="swiper-pagination"></div>
+                  </div>
+                </div>
+                <!--/ Website Analytics -->
+
+            
+
+
+        <!-- Sales Overview -->
+        <div class="col-lg-6 col-sm-6 mb-4">
+          <div class="card">
+            <div class="card-header">
+              <div class="d-flex justify-content-between">
+                <small class="d-block mb-1 text-muted">Aylık Talep Yanıtlama Sayısı</small>
+                <p class="card-text text-success">+18.2%</p>
+              </div>
+              <h4 class="card-title mb-1">Talep Yanıtlama Sayısı</h4>
+            </div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-4">
+                  <div class="d-flex gap-2 align-items-center mb-2">
+                    <span class="badge bg-label-info p-1 rounded"
+                      ><i class="ti ti-shopping-cart ti-xs"></i
+                    ></span>
+                    <p class="mb-0">Talep Yanıtlama Sayısı</p>
+                  </div>
+                  <h5 class="mb-0 pt-1 text-nowrap">345</h5>
+                </div>
+                <div class="col-4">
+                  <div class="divider divider-vertical">
+                    <div class="divider-text">
+                      <span class="badge-divider-bg bg-label-secondary">VS</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-4 text-end">
+                  <div class="d-flex gap-2 justify-content-end align-items-center mb-2">
+                    <p class="mb-0">Bağlanılan Cihaz Sayısı</p>
+                    <span class="badge bg-label-primary p-1 rounded"><i class="ti ti-link ti-xs"></i></span>
+                  </div>
+                  <h5 class="mb-0 pt-1 text-nowrap ms-lg-n3 ms-xl-0">25</h5>
+                </div>
+              </div>
+              <div class="d-flex align-items-center mt-4">
+                <div class="progress w-100" style="height: 8px">
+                  <div
+                    class="progress-bar bg-info"
+                    style="width: 70%"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                  <div
+                    class="progress-bar bg-primary"
+                    role="progressbar"
+                    style="width: 30%"
+                    aria-valuenow="30"
+                    aria-valuemin="0"
+                    aria-valuemax="100"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--/ Sales Overview -->
+
+
+
+            
+                <div class="col-xl-6 col-md-6 mb-4">
+                  <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                      <div class="card-title mb-0">
+                        <h5 class="mb-0">Taleplerin Hata Türleri</h5>
+                        <small class="text-muted">Son 1 Aylık Hata Türleri</small>
+                      </div>
+                      <div class="dropdown">
+                        <button
+                          class="btn p-0"
+                          type="button"
+                          id="sourceVisits"
+                          data-bs-toggle="dropdown"
+                          aria-haspopup="true"
+                          aria-expanded="false">
+                          <i class="ti ti-dots-vertical ti-sm text-muted"></i>
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="sourceVisits">
+                          <a class="dropdown-item" href="javascript:void(0);">Refresh</a>
+                          <a class="dropdown-item" href="javascript:void(0);">Download</a>
+                          <a class="dropdown-item" href="javascript:void(0);">View All</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-3 pb-1">
+                          <div class="d-flex align-items-start">
+                            <div class="badge bg-label-secondary p-2 me-3 rounded">
+                              <i class="ti ti-shadow ti-sm"></i>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
+                              <div class="me-2">
+                                <h6 class="mb-0">Beyaz Ekran Sorunu</h6>
+                                <small class="text-muted">Direct link click</small>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">1.2k</p>
+                                <div class="ms-3 badge bg-label-success">+4.2%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-3 pb-1">
+                          <div class="d-flex align-items-start">
+                            <div class="badge bg-label-secondary p-2 me-3 rounded">
+                              <i class="ti ti-globe ti-sm"></i>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
+                              <div class="me-2">
+                                <h6 class="mb-0">SFS Ekranı Açılmıyor</h6>
+                                <small class="text-muted">Social Channels</small>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">31.5k</p>
+                                <div class="ms-3 badge bg-label-success">+8.2%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-3 pb-1">
+                          <div class="d-flex align-items-start">
+                            <div class="badge bg-label-secondary p-2 me-3 rounded">
+                              <i class="ti ti-mail ti-sm"></i>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
+                              <div class="me-2">
+                                <h6 class="mb-0">Program Açılmıyor</h6>
+                                <small class="text-muted">Mail Campaigns</small>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">893</p>
+                                <div class="ms-3 badge bg-label-success">+2.4%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-3 pb-1">
+                          <div class="d-flex align-items-start">
+                            <div class="badge bg-label-secondary p-2 me-3 rounded">
+                              <i class="ti ti-external-link ti-sm"></i>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
+                              <div class="me-2">
+                                <h6 class="mb-0">SMS Gelmiyor</h6>
+                                <small class="text-muted">AMS</small>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">342</p>
+                                <div class="ms-3 badge bg-label-danger">-0.4%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-3 pb-1">
+                          <div class="d-flex align-items-start">
+                            <div class="badge bg-label-secondary p-2 me-3 rounded">
+                              <i class="ti ti-discount-2 ti-sm"></i>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
+                              <div class="me-2">
+                                <h6 class="mb-0">ADVT</h6>
+                                <small class="text-muted">Google ADVT</small>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">2.15k</p>
+                                <div class="ms-3 badge bg-label-success">+9.1%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                        <li class="mb-2">
+                          <div class="d-flex align-items-start">
+                            <div class="badge bg-label-secondary p-2 me-3 rounded">
+                              <i class="ti ti-star ti-sm"></i>
+                            </div>
+                            <div class="d-flex justify-content-between w-100 flex-wrap gap-2">
+                              <div class="me-2">
+                                <h6 class="mb-0">Other</h6>
+                                <small class="text-muted">Many Sources</small>
+                              </div>
+                              <div class="d-flex align-items-center">
+                                <p class="mb-0">12.5k</p>
+                                <div class="ms-3 badge bg-label-success">+6.2%</div>
+                              </div>
+                            </div>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+
+            
+
+                 <!-- Support Tracker -->
+ <div class="col-md-6 mb-4">
+  <div class="card h-100">
+    <div class="card-header d-flex justify-content-between pb-0">
+      <div class="card-title mb-0">
+        <h5 class="mb-0">Toplam Yanıtlara Göre Talep Yanıtlama Oranı</h5>
+        <small class="text-muted">Son 7 Gün</small>
+      </div>
+      <div class="dropdown">
+        <button
+          class="btn p-0"
+          type="button"
+          id="supportTrackerMenu"
+          data-bs-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false">
+          <i class="ti ti-dots-vertical ti-sm text-muted"></i>
+        </button>
+        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="supportTrackerMenu">
+          <a class="dropdown-item" href="javascript:void(0);">View More</a>
+          <a class="dropdown-item" href="javascript:void(0);">Delete</a>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12 col-sm-4 col-md-12 col-lg-4">
+          <div class="mt-lg-4 mt-lg-2 mb-lg-4 mb-2 pt-1">
+            <h1 class="mb-0">47</h1>
+            <p class="mb-0">Toplam Yanıt</p>
+          </div>
+          <ul class="p-0 m-0">
+            <li class="d-flex gap-3 align-items-center mb-lg-3 pt-2 pb-1">
+              <div class="badge rounded bg-label-primary p-1"><i class="ti ti-ticket ti-sm"></i></div>
+              <div>
+                <h6 class="mb-0 text-nowrap">Yanıtladığım Talep Sayısı</h6>
+                <small class="text-muted">12</small>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-items-center mb-lg-3 pb-1">
+              <div class="badge rounded bg-label-info p-1">
+                <i class="ti ti-circle-check ti-sm"></i>
+              </div>
+              <div>
+                <h6 class="mb-0 text-nowrap">Müşteri Memnuniyeti</h6>
+                <small class="text-muted">90%</small>
+              </div>
+            </li>
+            <li class="d-flex gap-3 align-items-center pb-1">
+              <div class="badge rounded bg-label-warning p-1"><i class="ti ti-clock ti-sm"></i></div>
+              <div>
+                <h6 class="mb-0 text-nowrap">Ortalama Yanıt Süresi</h6>
+                <small class="text-muted">23 dakika</small>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-8 col-md-12 col-lg-8">
+          <div id="taleporani"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/ Support Tracker -->
+               
+
+
+               
+
+
+                <!-- Projects table -->
+                <div class="col-12 col-xl-12 col-sm-12 order-1 order-lg-2 mb-4 mb-lg-0">
+                  <div class="card">
+                    <div class="card-datatable table-responsive">
+                      <table class="datatables-project2 table border-top">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th></th>
+                            <th>Firma İSMİ</th>
+                            <th>Firma Yetkilisi</th>
+                            <th>Talep Gönderen Kullanıcı Sayısı</th>
+                            <th class="w-px-200">Talep Sayısı</th>
+                            <th>Action</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!--/ Projects table -->
+              </div>
+            </div>
+            <!-- / Content -->
+
+            <!-- Footer -->
+            <footer class="content-footer footer bg-footer-theme">
+              <div class="container-xxl">
+                  <div class="footer-container d-flex align-items-center justify-content-between py-2 flex-md-row flex-column">
+                      <div>
+                          © 2023 - 
+                          <script>
+                              document.write(new Date().getFullYear());
+                          </script>
+                          <a href="https://doganium.com.tr" target="_blank" class="fw-medium">Doğanium Bilgi Teknolojileri</a>
+                      </div>
+                      <div class="d-none d-lg-inline-block">
+                          <a href="https://web.doganium.online" target="_blank" class="footer-link me-4">Sorgu Ekranına Git</a>
+                      </div>
+                  </div>
+              </div>
+          </footer>
+          
+            <!-- / Footer -->
+
+            <div class="content-backdrop fade"></div>
+          </div>
+          <!-- Content wrapper -->
+        </div>
+        <!-- / Layout page -->
+      </div>
+
+      <!-- Overlay -->
+      <div class="layout-overlay layout-menu-toggle"></div>
+
+      <!-- Drag Target Area To SlideIn Menu On Small Screens -->
+      <div class="drag-target"></div>
+    </div>
+    <!-- / Layout wrapper -->
+
+    <!-- Core JS -->
+   
+    <!-- build:js assets/vendor/js/core.js -->
+
+    <script src="assets/vendor/libs/jquery/jquery.js"></script>
+    <script src="assets/vendor/libs/popper/popper.js"></script>
+    <script src="assets/vendor/js/bootstrap.js"></script>
+    <script src="assets/vendor/libs/node-waves/node-waves.js"></script>
+    <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>
+    <script src="assets/vendor/libs/hammer/hammer.js"></script>
+    <script src="assets/vendor/libs/i18n/i18n.js"></script>
+    <script src="assets/vendor/libs/typeahead-js/typeahead.js"></script>
+    <script src="assets/vendor/js/menu.js"></script>
+
+    <!-- endbuild -->
+
+    <!-- Vendors JS -->
+    <script src="assets/vendor/libs/apex-charts/apexcharts.js"></script>
+    <script src="assets/vendor/libs/swiper/swiper.js"></script>
+    <script src="assets/vendor/libs/datatables-bs5/datatables-bootstrap5.js"></script>
+
+    <!-- Main JS -->
+    <script src="assets/js/main.js"></script>
+
+    <!-- Page JS -->
+    <script src="assets/js/dashboards-analytics.js"></script>
+
+
+
+    <script>
+      let cardColor, headingColor, legendColor, labelColor, borderColor;
+  if (isDarkStyle) {
+    cardColor = config.colors_dark.cardColor;
+    labelColor = config.colors_dark.textMuted;
+    legendColor = config.colors_dark.bodyColor;
+    headingColor = config.colors_dark.headingColor;
+    borderColor = config.colors_dark.borderColor;
+  } else {
+    cardColor = config.colors.cardColor;
+    labelColor = config.colors.textMuted;
+    legendColor = config.colors.bodyColor;
+    headingColor = config.colors.headingColor;
+    borderColor = config.colors.borderColor;
+  }
+
+      const taleporaniEl = document.querySelector('#taleporani'),
+       taleporaniOptions = {
+         series: [25.5],
+         labels: ['Yanıt Oranı  '],
+         chart: {
+           height: 360,
+           type: 'radialBar'
+         },
+         plotOptions: {
+           radialBar: {
+             offsetY: 10,
+             startAngle: -140,
+             endAngle: 130,
+             hollow: {
+               size: '65%'
+             },
+             track: {
+               background: cardColor,
+               strokeWidth: '100%'
+             },
+             dataLabels: {
+               name: {
+                 offsetY: -20,
+                 color: labelColor,
+                 fontSize: '13px',
+                 fontWeight: '400',
+                 fontFamily: 'Public Sans'
+               },
+               value: {
+                 offsetY: 10,
+                 color: headingColor,
+                 fontSize: '38px',
+                 fontWeight: '500',
+                 fontFamily: 'Public Sans'
+               }
+             }
+           }
+         },
+         colors: [config.colors.primary],
+         fill: {
+           type: 'gradient',
+           gradient: {
+             shade: 'dark',
+             shadeIntensity: 0.5,
+             gradientToColors: [config.colors.primary],
+             inverseColors: true,
+             opacityFrom: 1,
+             opacityTo: 0.6,
+             stops: [30, 70, 100]
+           }
+         },
+         stroke: {
+           dashArray: 10
+         },
+         grid: {
+           padding: {
+             top: -20,
+             bottom: 5
+           }
+         },
+         states: {
+           hover: {
+             filter: {
+               type: 'none'
+             }
+           },
+           active: {
+             filter: {
+               type: 'none'
+             }
+           }
+         },
+         responsive: [
+           {
+             breakpoint: 1025,
+             options: {
+               chart: {
+                 height: 330
+               }
+             }
+           },
+           {
+             breakpoint: 769,
+             options: {
+               chart: {
+                 height: 280
+               }
+             }
+           }
+         ]
+       };
+     if (typeof taleporaniEl !== undefined && taleporaniEl !== null) {
+       const taleporani = new ApexCharts(taleporaniEl, taleporaniOptions);
+       taleporani.render();
+     }
+
+
+
+     var dt_projects_table = $('.datatables-project2');
+
+if (dt_projects_table.length) {
+  var dt_project = dt_projects_table.DataTable({
+    ajax: assetsPath + 'json/user-profile.json',
+    columns: [
+      { data: '' },
+      { data: 'id' },
+      { data: 'project_name' },
+      { data: 'project_leader' },
+      { data: '' },
+      { data: 'status' },
+      { data: '' }
+    ],
+    columnDefs: [
+      {
+        // For Responsive
+        className: 'control',
+        searchable: false,
+        orderable: false,
+        responsivePriority: 2,
+        targets: 0,
+        render: function (data, type, full, meta) {
+          return '';
+        }
+      },
+      {
+        // For Checkboxes
+        targets: 1,
+        orderable: false,
+        searchable: false,
+        responsivePriority: 3,
+        checkboxes: true,
+        render: function () {
+          return '<input type="checkbox" class="dt-checkboxes form-check-input">';
+        },
+        checkboxes: {
+          selectAllRender: '<input type="checkbox" class="form-check-input">'
+        }
+      },
+      {
+        // Avatar image/badge, Name and post
+        targets: 2,
+        responsivePriority: 4,
+        render: function (data, type, full, meta) {
+          var $user_img = full['project_img'],
+            $name = full['project_name'],
+            $date = full['date'];
+          if ($user_img) {
+            // For Avatar image
+            var $output =
+              '<img src="' + $user_img + '" alt="Avatar" class="rounded-circle">';
+          } else {
+            // For Avatar badge
+            var stateNum = Math.floor(Math.random() * 6);
+            var states = ['success', 'danger', 'warning', 'info', 'primary', 'secondary'];
+            var $state = states[stateNum],
+              $name = full['project_name'],
+              $initials = $name.match(/\b\w/g) || [];
+            $initials = (($initials.shift() || '') + ($initials.pop() || '')).toUpperCase();
+            $output = '<span class="avatar-initial rounded-circle bg-label-' + $state + '">' + $initials + '</span>';
+          }
+          // Creates full output for row
+          var $row_output =
+            '<div class="d-flex justify-content-left align-items-center">' +
+            '<div class="avatar-wrapper">' +
+            '<div class="avatar me-2">' +
+            $output +
+            '</div>' +
+            '</div>' +
+            '<div class="d-flex flex-column">' +
+            '<span class="text-truncate fw-medium">' +
+            $name +
+            '</span>' +
+            '<small class="text-truncate text-muted">' +
+            $date +
+            '</small>' +
+            '</div>' +
+            '</div>';
+          return $row_output;
+        }
+      },
+      {
+        // talep_gonderenler
+        targets: 4,
+        orderable: false,
+        searchable: false,
+        render: function (data, type, full, meta) {
+          var $talep_gonderen_kullanici_sayisi = full['talep_gonderen_kullanici_sayisi'], $output;
+          return $talep_gonderen_kullanici_sayisi;
+        }
+      },
+      {
+        // Label
+        targets: -2,
+        render: function (data, type, full, meta) {
+          var $talep_sayisi = full['talep_sayisi'];
+          return (
+            $talep_sayisi
+          );
+        }
+      },
+      {
+        // Actions
+        targets: -1,
+        searchable: false,
+        title: 'Actions',
+        orderable: false,
+        render: function (data, type, full, meta) {
+          return (
+            '<div class="d-inline-block">' +
+            '<a href="javascript:;" class="btn btn-sm btn-icon dropdown-toggle hide-arrow" data-bs-toggle="dropdown"><i class="ti ti-dots-vertical"></i></a>' +
+            '<div class="dropdown-menu dropdown-menu-end m-0">' +
+            '<a href="javascript:;" class="dropdown-item">Details</a>' +
+            '<a href="javascript:;" class="dropdown-item">Archive</a>' +
+            '<div class="dropdown-divider"></div>' +
+            '<a href="javascript:;" class="dropdown-item text-danger delete-record">Delete</a>' +
+            '</div>' +
+            '</div>'
+          );
+        }
+      }
+    ],
+    order: [[2, 'desc']],
+    dom: '<"card-header pb-0 pt-sm-0"<"head-label text-center"><"d-flex justify-content-center justify-content-md-end"f>>t<"row mx-2"<"col-sm-12 col-md-6"i><"col-sm-12 col-md-6"p>>',
+    displayLength: 5,
+    lengthMenu: [5, 10, 25, 50, 75, 100],
+    responsive: {
+      details: {
+        display: $.fn.dataTable.Responsive.display.modal({
+          header: function (row) {
+            var data = row.data();
+            return 'Details of "' + data['project_name'] + '" Project';
+          }
+        }),
+        type: 'column',
+        renderer: function (api, rowIdx, columns) {
+          var data = $.map(columns, function (col, i) {
+            return col.title !== '' // ? Do not show row in modal popup if title is blank (for check box)
+              ? '<tr data-dt-row="' +
+                  col.rowIndex +
+                  '" data-dt-column="' +
+                  col.columnIndex +
+                  '">' +
+                  '<td>' +
+                  col.title +
+                  ':' +
+                  '</td> ' +
+                  '<td>' +
+                  col.data +
+                  '</td>' +
+                  '</tr>'
+              : '';
+          }).join('');
+
+          return data ? $('<table class="table"/><tbody />').append(data) : false;
+        }
+      }
+    }
+  });
+  $('div.head-label').html('<h5 class="card-title mb-0">Firmalara Göre Destek Talepleri</h5>');
+}
+   </script>
+
+
+</body>
+</html>
